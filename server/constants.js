@@ -9,14 +9,14 @@ function Define(name, value) {
     });
 }
 
-const imageSourcePath = "www.github.com/MLaurentys/";
+const imageSourcePath = "https://i.imgur.com/";
 const pageTitle = "Buy Paper";
-const mainImage = ["pic1.jpg", "Paper for all the purposes"];
+const mainImage = ["gZZsfI6.jpg", "Paper for all the purposes"];
 const secondaryImages = [
-    ["pic2", "Papel pergaminho resistente"],
-    ["pic3", "Papel colorido de alta qualidade"],
-    ["pic4", "Cortes de papel personalisados feitos na hora"],
-    ["pic5", "Montagem de blocos e cardernos na hora"],
+    ["YjuyTxC.jpg", "Papel pergaminho resistente"],
+    ["cu9cXAS.jpg", "Papel colorido de alta qualidade"],
+    ["Wziqx4b.jpg", "Cortes de papel personalisados feitos na hora"],
+    ["RJe1QNr.jpg", "Montagem de blocos e cardernos na hora"],
 ];
 
 function BuildGalleryImageJSON(relativeImagePath, imageTitle) {
