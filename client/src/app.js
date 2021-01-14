@@ -7,6 +7,9 @@ import React from "react";
 import "./app.css";
 
 import ServerHandler from "./server_handler";
+import Menu from "./components/menu";
+import Gallery from "./components/gallery";
+
 const print = console.log;
 
 class App extends React.Component {
@@ -14,9 +17,11 @@ class App extends React.Component {
         super(props);
         this.state = {
             content: null,
+            menuState: "open",
         };
         this.RenderLoadedPage = this.RenderLoadedPage.bind(this);
         this.RenderMainPage = this.RenderMainPage.bind(this);
+        this.ChangeMenuState = this.ChangeMenuState.bind(this);
     }
 
     componentDidMount() {
@@ -31,20 +36,36 @@ class App extends React.Component {
         return this.RenderMainPage(this.RenderLoadedPage);
     }
 
-    RenderMainPage(RenderContent) {
-        return <>{RenderContent()}</>;
+    ChangeMenuState() {
+        if (this.state.menuState == "open")
+            this.setState({ menuState: "closed" });
+        else this.setState({ menuState: "open" });
     }
 
-    RenderLoadingPage() {
+    RenderMainPage(RenderContent) {
         return (
-            <div className="content">
-                <h1>Loading...</h1>
-            </div>
+            <>
+                <div className={"menu " + this.state.menuState}>
+                    <Menu
+                        clickCB={this.ChangeMenuState}
+                        state={this.state.menuState}
+                    />
+                </div>
+                <div
+                    className={"serverContent gallery-" + this.state.menuState}
+                >
+                    {RenderContent()}
+                </div>
+            </>
         );
     }
 
+    RenderLoadingPage() {
+        return <h1>Loading...</h1>;
+    }
+
     RenderLoadedPage() {
-        return <div className="content"></div>;
+        return <Gallery content={this.state.content} />;
     }
 }
 

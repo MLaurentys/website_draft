@@ -1,0 +1,12 @@
+img {
+    width: auto;
+    max-width: 70%;
+    height: auto;
+}
+.mainPic {
+    max-width: 100%;
+}
+
+h1 {
+    padding-left: 5%;
+}

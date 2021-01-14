@@ -1,7 +1,30 @@
+.closed {
+    width: 3%;
+}
+
+.open {
+    width: 19%;
+}
+
 .menu {
-    position: sticky;
+    position: fixed;
     left: 0;
     background-color: antiquewhite;
     height: 100%;
-    width: 20%;
+    z-index: 1;
+}
+
+.serverContent {
+    position: relative;
+    background-color: bisque;
+}
+
+.gallery-open {
+    margin-left: 21%;
+    width: 79%;
+}
+
+.gallery-closed {
+    margin-left: 5%;
+    width: 95%;
 }

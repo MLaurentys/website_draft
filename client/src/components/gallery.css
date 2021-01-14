@@ -1,0 +1,47 @@
+.frame {
+    display: inline-block;
+    margin: 10% 10% 10% 0;
+    background-color: aqua;
+}
+
+.main {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin-left: 20%;
+    vertical-align: middle;
+}
+
+.baseGrid {
+    width: 80%;
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.innerGrid {
+    border: 1px solid black;
+    left: 50%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    align-items: center;
+    display: flex;
+}
+
+.item2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
