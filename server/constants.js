@@ -15,7 +15,7 @@ const mainImage = ["gZZsfI6.jpg", "Papel para qualquer motivo"];
 const secondaryImages = [
     ["YjuyTxC.jpg", "Papel pergaminho resistente"],
     ["cu9cXAS.jpg", "Papel colorido de alta qualidade"],
-    ["Wziqx4b.jpg", "Cortes customizados na hora"],
+    ["Wziqx4b.jpg", "Cortes variados na hora"],
     ["RJe1QNr.jpg", "Montagem de blocos na hora"],
 ];
 

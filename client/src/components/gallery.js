@@ -10,7 +10,7 @@ class Gallery extends React.Component {
             <>
                 <h1>{content.title}</h1>
                 <div className="baseGrid">
-                    <div className="frame item1">
+                    <div className="item1">
                         <Frame
                             addClass="mainPic"
                             title={content.mainImage.title}
@@ -19,7 +19,7 @@ class Gallery extends React.Component {
                     </div>
                     <div className="innerGrid item2">
                         {content.secondaryImages.map((info) => (
-                            <div className="grid-cell" key={info.title}>
+                            <div key={info.title}>
                                 <Frame title={info.title} imgPath={info.path} />
                             </div>
                         ))}

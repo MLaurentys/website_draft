@@ -34,3 +34,19 @@
     margin-left: 5%;
     width: 95%;
 }
+
+.make-scroll-button {
+    display: block;
+    width: 5%;
+    margin: 0 auto;
+}
+
+#additionalContent > p {
+    font-size: 16pt;
+}
+
+#additionalContent > img {
+    margin-right: 10%;
+    display: inline-block;
+    width: 40%;
+}

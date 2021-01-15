@@ -1,5 +1,10 @@
 .frame {
+    position: relative;
+    display: block;
+    border: 2px solid black;
     cursor: pointer;
+    max-height: 100%;
+    overflow: hidden;
 }
 
 .gallery-image {
@@ -14,7 +19,18 @@
 }
 
 .frame-caption {
-    background-color: cornsilk;
+    margin-bottom: 0;
+    margin-top: 0;
     display: block;
     padding-left: 5%;
+    background-color: darkgrey;
+}
+
+.modalIndicator {
+    position: absolute;
+    border: 0;
+    right: 0;
+    height: 2vh;
+    width: 2vh;
+    opacity: 0.5;
 }

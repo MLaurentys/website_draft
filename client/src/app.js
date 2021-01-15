@@ -9,6 +9,7 @@ import "./app.css";
 import ServerHandler from "./server_handler";
 import Menu from "./components/menu";
 import Gallery from "./components/gallery";
+import AdditionalContent from "./components/additional_content";
 
 class App extends React.Component {
     constructor(props) {
@@ -49,10 +50,21 @@ class App extends React.Component {
                         state={this.state.menuState}
                     />
                 </div>
-                <div
-                    className={"serverContent gallery-" + this.state.menuState}
-                >
-                    {RenderContent()}
+                <div className={"gallery-" + this.state.menuState}>
+                    <div className="serverContent">{RenderContent()}</div>
+                    <button
+                        className="make-scroll-button"
+                        onClick={() =>
+                            document
+                                .getElementById("additionalContent")
+                                .scrollIntoView()
+                        }
+                    >
+                        &#8615;
+                    </button>
+                    <div id="additionalContent">
+                        <AdditionalContent />
+                    </div>
                 </div>
             </>
         );

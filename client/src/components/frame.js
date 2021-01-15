@@ -33,6 +33,7 @@ class Frame extends React.Component {
                     src={this.props.imgPath}
                     alt={this.props.title}
                 />
+                <button className="modalIndicator">+</button>
                 <h1 className="frame-caption">{this.props.title}</h1>
             </div>
         );
