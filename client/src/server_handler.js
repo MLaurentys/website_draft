@@ -1,8 +1,6 @@
-import { prependOnceListener } from "process";
 import { w3cwebsocket as W3CWebSocket } from "websocket";
 
 const print = console.log;
-const util = require("util");
 
 class ServerHandler {
     constructor(AssignContent) {

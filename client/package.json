@@ -5,6 +5,7 @@
     "dependencies": {
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
+        "react-modal": "^3.12.1",
         "react-scripts": "3.4.3",
         "websocket": "^1.0.32"
     },
@@ -25,8 +26,5 @@
             "last 1 chrome version",
             "last 1 firefox version"
         ]
-    },
-    "devDependencies": {
-        "react-dnd": "^11.1.3"
     }
 }

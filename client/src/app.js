@@ -10,8 +10,6 @@ import ServerHandler from "./server_handler";
 import Menu from "./components/menu";
 import Gallery from "./components/gallery";
 
-const print = console.log;
-
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -37,7 +35,7 @@ class App extends React.Component {
     }
 
     ChangeMenuState() {
-        if (this.state.menuState == "open")
+        if (this.state.menuState === "open")
             this.setState({ menuState: "closed" });
         else this.setState({ menuState: "open" });
     }

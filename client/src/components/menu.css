@@ -6,5 +6,8 @@
 }
 
 .menuButton {
-    vertical-align: middle;
+    position: absolute;
+    height: 6%;
+    top: 44vh;
+    right: -10%;
 }

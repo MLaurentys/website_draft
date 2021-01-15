@@ -1,0 +1,14 @@
+.border {
+    opacity: 1;
+    background-color: black;
+    width: 50%;
+    margin-left: 50%;
+    margin: 0 auto;
+}
+
+.image-lightbox {
+    display: block;
+    margin: auto;
+    padding: 10% 0;
+    max-height: 50vh;
+}

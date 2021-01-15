@@ -19,7 +19,7 @@ class Menu extends React.Component {
             <>
                 <img id="menuLogo" src="logo192.png" alt="logo" />
                 <ul>
-                    <li>What is on demand on 2021?</li>
+                    <li>O que importa em 2021?</li>
                 </ul>
                 <button className="menuButton" onClick={this.props.clickCB}>
                     &lt;
