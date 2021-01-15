@@ -29,7 +29,6 @@ class ServerHandler {
         this.SendInitialMessage = this.SendInitialMessage.bind(this);
 
         this.wsServer.on("request", this.ReceiveNewConnection);
-        print(mainPageGallery);
     }
 
     SendMessage(messageType, cID, infoObject) {
