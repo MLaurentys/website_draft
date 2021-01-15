@@ -10,13 +10,13 @@ function Define(name, value) {
 }
 
 const imageSourcePath = "https://i.imgur.com/";
-const pageTitle = "Buy Paper";
-const mainImage = ["gZZsfI6.jpg", "Paper for all the purposes"];
+const pageTitle = "Compre Papel";
+const mainImage = ["gZZsfI6.jpg", "Papel para qualquer motivo"];
 const secondaryImages = [
     ["YjuyTxC.jpg", "Papel pergaminho resistente"],
     ["cu9cXAS.jpg", "Papel colorido de alta qualidade"],
-    ["Wziqx4b.jpg", "Cortes de papel personalisados feitos na hora"],
-    ["RJe1QNr.jpg", "Montagem de blocos e cardernos na hora"],
+    ["Wziqx4b.jpg", "Cortes customizados na hora"],
+    ["RJe1QNr.jpg", "Montagem de blocos na hora"],
 ];
 
 function BuildGalleryImageJSON(relativeImagePath, imageTitle) {
