@@ -46,7 +46,7 @@ class Frame extends React.Component {
                 isOpen={true}
                 onRequestClose={() => this.setState({ selected: false })}
             >
-                <ProductLightbox imgPath={this.props.imgPath} />
+                <ProductLightbox info={this.props.lightbox} />
             </Modal>
         );
     }

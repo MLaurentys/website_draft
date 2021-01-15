@@ -1,12 +1,24 @@
+#additionalContent {
+    padding: 0 3%;
+    background-color: honeydew;
+}
+
 #additionalContent > p {
     text-align: justify;
     font-size: 16pt;
     width: 70vw;
 }
 
+#additionalContent > h1 {
+    padding-top: 2%;
+    text-align: center;
+    font-size: 32pt;
+}
+
 .images {
     display: block;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: 4vw;
     width: 62vw;
 }
 
@@ -14,9 +26,4 @@
     margin: 0 3vw;
     display: inline-block;
     width: 25vw;
-}
-
-#additionalContent {
-    padding: 0 3%;
-    background-color: honeydew;
 }
