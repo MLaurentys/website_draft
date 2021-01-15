@@ -8,6 +8,11 @@ class Gallery extends React.Component {
         let content = this.props.content;
         return (
             <>
+                <img
+                    className="gallery-section-icon"
+                    src="thumbs_up_icon.png"
+                    alt="thumbs up icon"
+                />
                 <h1 className="main-title">{content.title}</h1>
                 <div className="baseGrid">
                     <div className="item1">

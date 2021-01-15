@@ -6,6 +6,11 @@ class AdditionalContent extends React.Component {
     render() {
         return (
             <>
+                <img
+                    className="additional-section-icon"
+                    src="thumbs_down_icon.png"
+                    alt="thumbs down icon"
+                />
                 <h1>Tablets</h1>
                 <p>
                     A tablet computer, commonly shortened to tablet, is a mobile

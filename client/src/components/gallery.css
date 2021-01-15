@@ -35,3 +35,10 @@
     grid-row-start: 1;
     grid-row-end: 1;
 }
+
+.gallery-section-icon {
+    padding: 2% 0 0 3%;
+    position: absolute;
+    height: auto;
+    width: 5vw;
+}

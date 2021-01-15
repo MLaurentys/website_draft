@@ -27,3 +27,10 @@
     display: inline-block;
     width: 25vw;
 }
+
+.additional-section-icon {
+    padding-top: 2%;
+    position: absolute;
+    height: auto;
+    width: 5vw;
+}
