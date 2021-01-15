@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./additional_content.css";
+
 class AdditionalContent extends React.Component {
     render() {
         return (
@@ -31,15 +33,22 @@ class AdditionalContent extends React.Component {
                     connect to independent physical keyboards by Bluetooth or
                     USB; 2-in-1 PCs have keyboards, distinct from tablets.
                 </p>
-                <img
-                    src="https://cdn.pixabay.com/photo/2017/02/26/04/02/woman-2099465_960_720.jpg"
-                    alt="Mulher sorrindo usando um tablet"
-                />
-                <img
-                    src="https://images.freeimages.com/images/large-previews/f32/pills-tablets-1-1524568.jpg"
-                    alt="Um monte de pílulas e remédios"
-                />
-
+                <div className="images">
+                    <img
+                        src={
+                            "https://cdn.pixabay.com/photo/2017/02/26/04/02/" +
+                            "woman-2099465_960_720.jpg"
+                        }
+                        alt="Mulher sorrindo usando um tablet"
+                    />
+                    <img
+                        src={
+                            "https://images.freeimages.com/images/" +
+                            "large-previews/f32/pills-tablets-1-1524568.jpg"
+                        }
+                        alt="Um monte de pílulas e remédios"
+                    />
+                </div>
                 <p>
                     The form of the tablet was conceptualized in the middle of
                     the 20th century (Stanley Kubrick depicted fictional tablets

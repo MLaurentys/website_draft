@@ -18,19 +18,25 @@
     background-color: antiquewhite;
     height: 100%;
     font-size: 20pt;
+    transition: all 1s;
 }
 
-.serverContent {
+#serverContent {
     position: relative;
     background-color: bisque;
+    padding-bottom: 5%;
 }
 
-.gallery-open {
+.main-page {
+    transition: all 2s;
+}
+
+.menu-open {
     margin-left: 21%;
     width: 79%;
 }
 
-.gallery-closed {
+.menu-closed {
     margin-left: 5%;
     width: 95%;
 }
@@ -39,14 +45,4 @@
     display: block;
     width: 5%;
     margin: 0 auto;
-}
-
-#additionalContent > p {
-    font-size: 16pt;
-}
-
-#additionalContent > img {
-    margin-right: 10%;
-    display: inline-block;
-    width: 40%;
 }

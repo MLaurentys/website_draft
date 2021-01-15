@@ -50,8 +50,8 @@ class App extends React.Component {
                         state={this.state.menuState}
                     />
                 </div>
-                <div className={"gallery-" + this.state.menuState}>
-                    <div className="serverContent">{RenderContent()}</div>
+                <section className={"main-page menu-" + this.state.menuState}>
+                    <div id="serverContent">{RenderContent()}</div>
                     <button
                         className="make-scroll-button"
                         onClick={() =>
@@ -65,7 +65,7 @@ class App extends React.Component {
                     <div id="additionalContent">
                         <AdditionalContent />
                     </div>
-                </div>
+                </section>
             </>
         );
     }
